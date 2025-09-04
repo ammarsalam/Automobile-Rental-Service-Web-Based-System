@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automobile Rental Service</title>
+  <link rel="stylesheet" href="./content/css/profile_2.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+</head>
+
+<body>
+
+<input type="checkbox" id="bars">
+  <nav class="nav-bar" id="navbar">
+    <div class="content">
+      <div class="logo nav__logo">
+        <a href="#"><img src="content/carBackground.png" alt="logo" />
+        <h1>MyCars</h1>
+        </a>
+      </div>
+
+      <ul class="navigation">
+        <li class="link"><a href="homePage.html">home</a></li>
+        <li class="link"><a href="bookingCar.html">cars</a></li>
+        <img src="content/setting3.png" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div div class="user-info">
+              <i class="ri-profile-line"></i>
+              <h2>Settings</h2>
+            </div>
+            <hr>
+
+            <a href="viewProfileController" class="sub-menu-link">
+              <img src="content/profile.png" alt="">
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <a href="ListOfBookingRRController" class="sub-menu-link">
+              <img src="content/booking.png" alt="">
+              <p>Your Booking</p>
+              <span>></span>
+            </a>
+            <a href="ListCarRRController" class="sub-menu-link">
+              <img src="content/car.png" alt="">
+              <p>Your Car</p>
+              <span>></span>
+            </a>
+            <a href="ListOfPaymentRRController" class="sub-menu-link">
+              <img src="content/car.png" alt="">
+              <p>Your Payment</p>
+              <span>></span>
+            </a>
+            <a href="frontPage.html" class="sub-menu-link">
+              <img src="content/logout.png" alt="">
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      
+      </ul>
+
+      <label for='bars' class="icon-bars"><i class="ri-bar-chart-2-fill"></i></label>
+    </div>
+  </nav>
+
+  <header class="home" id="home">
+    <div class="content">
+      <h1>Profile <strong>Setting</strong>  <strong></strong> </h1>
+	  <h4>Update Details</h4>
+    </div>
+  </header>
+
+  <section class="car-form-panel">
+    <div class="form-instructions">
+      <h2 id="enter-details">UPDATE DETAILS</h2>
+    </div>
+    <div class="car-form">
+      <form action="bookingPay.jsp" method="post">
+
+        <label for="name">NAME :</label>
+        <input type="text" id="name" name="name" required> 
+
+        <label for="bookingDate">Booking Date:</label>
+        <input type="date" id="bookingDate" name="bookingDate" required>
+
+        <label for="pickupLocation">Pickup Location:</label>
+        <input type="text" id="pickupLocation" name="pickupLocation" required>
+
+        <label for="dropLocation">Drop Location:</label>
+        <input type="text" id="dropLocation" name="dropLocation" required>
+
+        <input type="submit" id="btn-submit" value="BOOKING">
+      </form>
+      
+    </div>    
+    
+  </section>
+
+  <script src="./js/homePage.js"></script>
+
+</body>
+
+</html>

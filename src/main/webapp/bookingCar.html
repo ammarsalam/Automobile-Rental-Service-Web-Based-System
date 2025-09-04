@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automobile Rental Service</title>
+  <link rel="stylesheet" href="./content/css/bookingCar.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+</head>
+
+<body>
+
+<input type="checkbox" id="bars">
+  <nav class="nav-bar" id="navbar">
+    <div class="content">
+      <div class="logo nav__logo">
+        <a href="#"><img src="content/carBackground.png" alt="logo" />
+        <h1>MyCars</h1>
+        </a>
+      </div>
+
+      <ul class="navigation">
+        <li class="link"><a href="homePage.jsp">home</a></li>
+        <li class="link"><a href="#next">cars</a></li>
+        <img src="content/setting3.png" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div div class="user-info">
+              <i class="ri-profile-line"></i>
+              <h2>Settings</h2>
+            </div>
+            <hr>
+
+            <a href="viewProfileController" class="sub-menu-link">
+              <img src="content/profile.png" alt="">
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <a href="ListOfBookingRRController" class="sub-menu-link">
+              <img src="content/booking.png" alt="">
+              <p>Your Booking</p>
+              <span>></span>
+            </a>
+            <a href="ListCarRRController" class="sub-menu-link">
+              <img src="content/car.png" alt="">
+              <p>Your Car</p>
+              <span>></span>
+            </a>
+            <a href="ListOfPaymentRRController" class="sub-menu-link">
+              <img src="content/payment.png" alt="">
+              <p>Your Payment</p>
+              <span>></span>
+            </a>
+            <a href="logoutController" class="sub-menu-link">
+              <img src="content/logout.png" alt="">
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      
+      </ul>
+
+      <label for='bars' class="icon-bars"><i class="ri-bar-chart-2-fill"></i></label>
+    </div>
+  </nav>
+
+  <header class="home" id="home">
+    <div class="content">
+      <h1>Discover <strong>the</strong> most <strong>attractive</strong> cars </h1>  
+      <h4>Let's see the cars with your passion</h4>   
+    </div>
+  </header> 
+
+
+  <section class="next" id="next">
+    <div class="content">
+      <div class="items">
+
+        <div class="card">
+          <div class="image">
+            <img src="content/discover-1.png" alt="" srcset="">
+          </div>
+          <div class="content-card">
+            <h4>Bezza</h4>
+            <p>
+              RM90 per day
+            </p>
+            <button class="btn-read" onclick="location.href='bezzaController'">Book </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="content/discover-2.png" alt="" srcset="">
+          </div>
+          <div class="content-card">
+            <h4>Myvi</h4>
+            <p>
+              RM80 per day 
+            </p>
+            <button class="btn-read" onclick="location.href='myviController'">Book</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="content/discover-3.png" alt="" srcset="">
+          </div>
+          <div class="content-card">
+            <h4>Axia</h4>
+            <p>
+              RM80 per day 
+            </p>
+            <button class="btn-read" onclick="location.href='axiaController'">Book</button>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+              <img src="content/discover-4.png" alt="" srcset="">
+            </div>
+            <div class="content-card">
+              <h4>Kancil</h4>
+              <p>
+                RM70 per day
+              </p>
+              <button class="btn-read" onclick="location.href='kancilController'">Book</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="content/discover-5.png" alt="" srcset="">
+            </div>
+            <div class="content-card">
+              <h4>Persona</h4>
+              <p>
+                RM90 per day 
+              </p>
+              <button class="btn-read" onclick="location.href='personaController'">Book</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="content/discover-6.png" alt="" srcset="">
+            </div>
+            <div class="content-card">
+              <h4>Wira</h4>
+              <p>
+                RM80 per day
+              </p>
+              <button class="btn-read" onclick="location.href='wiraController'">Book</button>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/homePage.js"></script>
+
+</body>
+
+</html>
